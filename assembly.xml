@@ -1,0 +1,17 @@
+<assembly>
+    <id>bundle</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <includes>
+                <include>db.changelog.xml</include>
+                <include>cdrr.changelog.xml</include>
+                <include>src/**</include>
+            </includes>
+            <outputDirectory>/operations</outputDirectory>
+        </fileSet>
+    </fileSets>
+</assembly>
